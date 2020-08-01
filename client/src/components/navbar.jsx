@@ -4,7 +4,7 @@ import styled from "styled-components"
 export const Navbar = () => {
 
   const Box = styled.div`
-    background: blue;
+    background: #406DE5;
     color: white;
     height: 5vh;
     margin-bottom: 2vh;

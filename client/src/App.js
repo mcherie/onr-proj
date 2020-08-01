@@ -5,6 +5,7 @@ import './App.css';
 import { Navbar } from "./components/navbar"
 import { Sidebar } from './components/sidebar';
 import { Title } from './components/title';
+import { Main } from './components/main';
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
       <Navbar />
           PERFORMANCE MANAGEMENT
         <Title />
+        <Main />
       </body>
     </div>
   );

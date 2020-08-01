@@ -5,7 +5,7 @@ import styled from "styled-components"
 export const Title = () => {
 
     const Head = styled.div`
-        background: grey;
+        background: #D6D5D4;
         height: 8vh;
         margin-top: 2vh;
     `
