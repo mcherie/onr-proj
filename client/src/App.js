@@ -3,6 +3,7 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 
 import { Navbar } from "./components/navbar"
+import { Sidebar } from './components/sidebar';
 
 function App() {
 
@@ -29,8 +30,12 @@ function App() {
           {data}
 
         </a> */}
-        <Navbar />
+              <Sidebar />
       </header>
+      <body className="body">
+      <Navbar />
+              PERFORMANCE MANAGEMENT
+      </body>
     </div>
   );
 }

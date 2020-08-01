@@ -1,9 +1,16 @@
 import React from "react"
+import styled from "styled-components"
 
 export const Navbar = () => {
+
+  const Box = styled.div`
+    background: blue;
+    color: white;
+    height: 5vh;
+  `
   return (
-    <div>
+    <Box>
       Diagnostic Tools
-    </div>
+    </Box>
   )
 }
