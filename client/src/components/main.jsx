@@ -6,7 +6,7 @@ import { Trend } from "./trend"
 export const Main = () => {
 
     const Layout = styled.div`
-    display: flex;
+        display: flex;
     `
     return (
         <Layout >
