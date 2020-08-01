@@ -7,6 +7,7 @@ export const Navbar = () => {
     background: blue;
     color: white;
     height: 5vh;
+    margin-bottom: 2vh;
   `
   return (
     <Box>

@@ -4,6 +4,7 @@ import './App.css';
 
 import { Navbar } from "./components/navbar"
 import { Sidebar } from './components/sidebar';
+import { Title } from './components/title';
 
 function App() {
 
@@ -34,7 +35,8 @@ function App() {
       </header>
       <body className="body">
       <Navbar />
-              PERFORMANCE MANAGEMENT
+          PERFORMANCE MANAGEMENT
+        <Title />
       </body>
     </div>
   );
