@@ -5,8 +5,9 @@ import styled from "styled-components"
 export const Trend = () => {
 
     const Box = styled.div`
-    background: blue;
-    flex: 1;
+        background: blue;
+        flex: 1;
+        text-align: left;
     `
     return (
         <Box >
