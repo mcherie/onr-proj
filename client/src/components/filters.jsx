@@ -5,6 +5,7 @@ import { Cards } from "./cards"
 
 export const Filters = () => {
 
+        // for the whole side to be equal flex 1 from quality
     const Wrapper = styled.div`
         background: red;
         flex: 1;
