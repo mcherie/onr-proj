@@ -21,7 +21,6 @@ export const Sidebar = () => {
         height: 25vh;
         justify-content: space-between;
         margin-top: 7vh;
-        display: flex;
         align-items: center;
         padding-right: 0.6vh;
     `

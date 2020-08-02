@@ -13,12 +13,12 @@ export const Title = () => {
         margin-top: 2vh;
         display: flex;
         align-items: center; 
-        padding-left: 20vh;
+        padding-left: 21vh;
     `
 
     return (
         <Head >
-            <FontAwesomeIcon icon={faGlobe} size="2x"/>
+            <FontAwesomeIcon icon={faGlobe} size="lg"/>
             <text style={{marginLeft: "1vh"}}>Diagnostic Tool</text>
         </Head>
     )
