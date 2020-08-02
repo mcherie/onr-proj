@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 
@@ -11,11 +11,11 @@ function App() {
 
   const [data, setData] = useState()
 
-  useEffect(()=> {
+  useEffect(() => {
     fetch("http://localhost:5000/test")
-    .then(res => res.text())
-    .then(res => setData(res))
-  },[])
+      .then(res => res.text())
+      .then(res => setData(res))
+  }, [])
 
   console.log("data is", data)
   return (
@@ -32,11 +32,11 @@ function App() {
           {data}
 
         </a> */}
-              <Sidebar />
+        <Sidebar />
       </header>
       <body className="body">
-      <Navbar />
-          PERFORMANCE MANAGEMENT
+        <Navbar />
+        <text style={{ marginLeft: "21vh" }}>PERFORMANCE MANAGEMENT</text>
         <Title />
         <Main />
       </body>

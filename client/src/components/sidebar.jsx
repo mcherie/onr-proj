@@ -7,10 +7,11 @@ export const Sidebar = () => {
         height: 100vh;
         background: #375C91;
         width: 5vh;
+        overflow-wrap: break-word;
     `
     return (
         <Box>
-            sidebarsfdsf
+            sidebarsfdsf ;lkrter werp[opsdfs]
         </Box>
     )
 }

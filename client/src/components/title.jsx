@@ -11,12 +11,15 @@ export const Title = () => {
         background: #D6D5D4;
         height: 8vh;
         margin-top: 2vh;
+        display: flex;
+        align-items: center; 
+        padding-left: 20vh;
     `
 
     return (
         <Head >
             <FontAwesomeIcon icon={faGlobe} size="2x"/>
-            Diagnostic Tool
+            <text style={{marginLeft: "1vh"}}>Diagnostic Tool</text>
         </Head>
     )
 

@@ -15,6 +15,7 @@ export const Trend = () => {
     const Content = styled.div`
         background: blue;
         display: flex;
+        align-items: center;
     `
 
 
@@ -30,8 +31,9 @@ export const Trend = () => {
 
     const Area = styled.div`
         background: grey;
-        height: 30vh;
-        width: 30vh;
+        height: 50vh;
+        width: 50vh;
+        margin: 50px;
     `
 
     const Title = styled.div`
@@ -52,6 +54,7 @@ export const Trend = () => {
                 </Tab>
                 <Right />
             </Content>
+            <Area />
         </Wrapper>
 
     )
