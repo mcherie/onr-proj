@@ -1,8 +1,9 @@
 const express = require("express")
 const router = express.Router()
+const data = require("../data.json")
 
 router.get("/", (req, res, next) => {
-  res.send("You reached test API")
+  res.send(data.gaugeData)
 })
 
 module.exports = router

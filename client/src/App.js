@@ -12,12 +12,13 @@ function App() {
   const [data, setData] = useState()
 
   useEffect(() => {
-    fetch("http://localhost:5000/test")
-      .then(res => res.text())
+    fetch("http://localhost:5000/gaugeData")
+      .then(res => res.json())
       .then(res => setData(res))
   }, [])
 
-  console.log("data is", data)
+  console.log("1. passing on:", data)
+
   return (
     <div className="App">
       <header className="App-header">
@@ -34,12 +35,12 @@ function App() {
         </a> */}
         <Sidebar />
       </header>
-      <body className="body">
+      <div className="body">
         <Navbar />
         <text style={{ marginLeft: "21vh" }}>PERFORMANCE MANAGEMENT</text>
         <Title />
-        <Main />
-      </body>
+        <Main data={data}/>
+      </div>
     </div>
   );
 }

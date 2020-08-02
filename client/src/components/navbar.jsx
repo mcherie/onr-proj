@@ -39,11 +39,11 @@ export const Navbar = () => {
       <Title>Diagnostic Tools</Title>
       <Box>
         Logged in as General User |
-        <FontAwesomeIcon icon={faThumbtack} size="m" color="white" />
+        <FontAwesomeIcon icon={faThumbtack} size="1x" color="white" />
         <FontAwesomeIcon icon={faSignal} size="xs" color="white" />
-        <FontAwesomeIcon icon={faEnvelopeOpenText} size="m" color="white" />
+        <FontAwesomeIcon icon={faEnvelopeOpenText} size="1x" color="white" />
         <FontAwesomeIcon icon={faProjectDiagram} size="xs" color="white" />
-        <FontAwesomeIcon icon={faFileImport} size="m" color="white" />
+        <FontAwesomeIcon icon={faFileImport} size="1x" color="white" />
       </Box>
     </Wrapper>
   )

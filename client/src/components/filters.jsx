@@ -3,9 +3,13 @@ import React from "react"
 import styled from "styled-components"
 import { Cards } from "./cards"
 
-export const Filters = () => {
+export const Filters = ({ data }) => {
 
-        // for the whole side to be equal flex 1 from quality
+    const guageData = data.data
+    console.log("guage data is", guageData)
+
+
+    // for the whole side to be equal flex 1 from quality
     const Wrapper = styled.div`
         background: red;
         flex: 1;
@@ -47,12 +51,7 @@ export const Filters = () => {
                     CQAs with Closed Loop
                 </Results>
                 <Container>
-                    <Cards />
-                    <Cards />
-                    <Cards />
-                    <Cards />
-                    <Cards />
-                    <Cards />
+                    {guageData && guageData.map(each => <Cards title={each.name} score={each.score} sample={each.sample} />)}
                 </Container>
             </Content>
         </Wrapper >

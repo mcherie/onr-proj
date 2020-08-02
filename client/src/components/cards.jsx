@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-export const Cards = () => {
+export const Cards = ({title, sample, score}) => {
 
     const Card = styled.div`
         height: 22vh;
@@ -14,7 +14,9 @@ export const Cards = () => {
 
     return (
         <Card >
-            hello
+            {title}
+            Score: {score}
+            Sample: {sample}
         </Card>
     )
 }
