@@ -14,7 +14,6 @@ export const Main = (data) => {
 
     const fetchAreaData = (area) => {
         setSelectedArea(area)
-        // fetch(`http://localhost:5000/areaData/${area}`)
         fetch(`https://onr-proj.herokuapp.com/areaData/${area}`)
         .then(res => res.json())
         .then(res => setAreaData(res))

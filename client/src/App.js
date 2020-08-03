@@ -11,7 +11,6 @@ function App() {
   const [data, setData] = useState()
 
   useEffect(() => {
-    // fetch("http://localhost:5000/gaugeData")
     fetch(`https://onr-proj.herokuapp.com/gaugeData`)
       .then(res => res.json())
       .then(res => setData(res))
