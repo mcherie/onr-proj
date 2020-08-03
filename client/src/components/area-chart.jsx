@@ -13,7 +13,7 @@ export const AreaChart = ({ areaData }) => {
             >
                 <VictoryArea
                     style={{
-                        data: { fill: "cyan", stroke: "cyan", }
+                        data: { fill: "#1359AC", stroke: "#03396c", }
                     }}
                     data={ areaData? areaData.map(each => {
                         return {

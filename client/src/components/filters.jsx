@@ -29,8 +29,8 @@ export const Filters = ({ data, fetchAreaData, selectedArea }) => {
         margin-top: 1vh;
         padding-left: 2vh;
         height: auto;
-        color: darkgrey;
-        font-size: 0.9em;
+        color: #65696D;
+        font-size: 0.8em;
     `
 
     const Container = styled.div`
@@ -44,7 +44,7 @@ export const Filters = ({ data, fetchAreaData, selectedArea }) => {
         <Wrapper>
             <Box />
             <Content>
-                <span style={{ fontSize: "0.8em" }}>Filters</span>
+                <span style={{ fontSize: "0.8em", color: "#4C4F52"}}>Filters</span>
                 <Results >
                     <p>■ All CQA Results ◉ </p>
                     <p>□ CQAs with Closed Loop ◉ </p>

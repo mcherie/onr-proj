@@ -8,24 +8,24 @@ export const Cards = ({ title, sample, score, fetchAreaData, selectedArea }) => 
     const Card = styled.div`
         height: 22vh;
         flex-basis: 30%;
-        border: 1px solid blue;
+        border: 1px solid #b3cde0;
         border-radius: 3px;
         margin-top: 3vh;
-        // margin-bottom: 1vh;
-        background: ${selectedArea == title ? "lightblue" : null};
+        background: ${selectedArea == title ? "#F1F6FB" : null};
         height: auto;
-        color: darkblue;
+        color: #005b96;
         font-size: 0.9em;
+        text-align: center;
+        padding-bottom: 1vh;
+        padding-top: 1vh;
     `
 
     return (
         <Card onClick={fetchAreaData}>
             {title}
-            <br></br>
-            Score: {score}
-            <br></br>
-            Sample: {sample}
             <Circle score={score} />
+            <span style={{ color: "#65696D" }}>Sample: {sample} </span>
+
         </Card>
     )
 }

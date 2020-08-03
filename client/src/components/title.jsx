@@ -15,6 +15,7 @@ export const Title = () => {
         display: flex;
         align-items: center; 
         padding-left: 21vh;
+        color: #4C4F52;
     `
 
     return (

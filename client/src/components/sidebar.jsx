@@ -9,7 +9,7 @@ export const Sidebar = () => {
 
     const Box = styled.div`
         height: 100vh;
-        background: #375C91;
+        background: #011f4b;
         width: 5vh;
         overflow-wrap: break-word;
         text-align: center;

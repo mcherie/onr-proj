@@ -8,7 +8,7 @@ import { faThumbtack, faSignal, faEnvelopeOpenText, faProjectDiagram, faFileImpo
 export const Navbar = () => {
 
   const Wrapper = styled.div`
-    background: #406DE5;
+    background: #005b96;
     color: white;
     height: 5vh;
     margin-bottom: 2vh;
@@ -31,15 +31,15 @@ export const Navbar = () => {
     transform: translateY(40%);
     display: flex;
     justify-content: space-between;
-    width: 50vh;
+    width: 45vh;
   `
 
   return (
     <Wrapper>
-      <Title>Diagnostic Tools</Title>
+      <Title>Diagnostic Tool</Title>
       <Box>
-        <span style={{ fontSize: "0.8em" }}>Logged in as General User </span>|
-        <FontAwesomeIcon icon={faThumbtack} size="1x" color="white" />
+        <span style={{ fontSize: "0.7em" }}>Logged in as General User </span>|
+        <FontAwesomeIcon icon={faThumbtack} size="xxs" color="white" />
         <FontAwesomeIcon icon={faSignal} size="xs" color="white" />
         <FontAwesomeIcon icon={faEnvelopeOpenText} size="1x" color="white" />
         <FontAwesomeIcon icon={faProjectDiagram} size="xs" color="white" />
