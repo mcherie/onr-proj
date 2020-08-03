@@ -37,7 +37,7 @@ export const Trend = ({ areaData }) => {
     `
 
     const Box = styled.div`
-        height: 3vh;
+        height: 4vh;
         width: auto;
         background: #196ba0;
         border-radius: 3px;

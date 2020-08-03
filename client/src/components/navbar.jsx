@@ -9,7 +9,7 @@ export const Navbar = () => {
   const Wrapper = styled.div`
     background: #005b96;
     color: white;
-    height: 5vh;
+    height: 6vh;
     margin-bottom: 2vh;
     padding-left: 10vh;
     position: relative;
@@ -30,16 +30,16 @@ export const Navbar = () => {
     transform: translateY(40%);
     display: flex;
     justify-content: space-between;
-    width: 45vh;
+    width: 50vh;
   `
 
   return (
     <Wrapper>
       <Title>Diagnostic Tool</Title>
       <Box>
-        <span style={{ fontSize: "0.7em" }}>Logged in as General User </span>|
+        <span style={{ fontSize: "0.9em" }}>Logged in as General User </span>|
         <FontAwesomeIcon icon={faThumbtack} size="xxs" color="white" />
-        <FontAwesomeIcon icon={faSignal} size="xs" color="white" />
+        <FontAwesomeIcon icon={faSignal} size="1x" color="white" />
         <FontAwesomeIcon icon={faEnvelopeOpenText} size="1x" color="white" />
         <FontAwesomeIcon icon={faProjectDiagram} size="xs" color="white" />
         <FontAwesomeIcon icon={faFileImport} size="1x" color="white" />

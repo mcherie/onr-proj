@@ -8,7 +8,7 @@ export const AreaChart = ({ areaData }) => {
         <VictoryChart width={600} height={300} >
             <VictoryGroup
                 style={{
-                    data: { strokeWidth: 3, fillOpacity: 0.4 }
+                    data: { strokeWidth: 2, fillOpacity: 0.4 }
                 }}
             >
                 <VictoryArea
