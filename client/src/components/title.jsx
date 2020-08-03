@@ -9,8 +9,9 @@ export const Title = () => {
 
     const Head = styled.div`
         background: #D6D5D4;
-        height: 8vh;
+        height: 7vh;
         margin-top: 2vh;
+        margin-bottom: 3vh;
         display: flex;
         align-items: center; 
         padding-left: 21vh;

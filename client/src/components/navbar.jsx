@@ -38,7 +38,7 @@ export const Navbar = () => {
     <Wrapper>
       <Title>Diagnostic Tools</Title>
       <Box>
-        Logged in as General User |
+        <span style={{ fontSize: "0.8em" }}>Logged in as General User </span>|
         <FontAwesomeIcon icon={faThumbtack} size="1x" color="white" />
         <FontAwesomeIcon icon={faSignal} size="xs" color="white" />
         <FontAwesomeIcon icon={faEnvelopeOpenText} size="1x" color="white" />

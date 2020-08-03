@@ -9,44 +9,45 @@ export const Filters = ({ data, fetchAreaData, selectedArea }) => {
 
     // for the whole side to be equal flex 1 from quality
     const Wrapper = styled.div`
-        background: red;
         flex: 1;
         justify-content: start;
         text-align: left;
         display: flex;
     `
-
     const Box = styled.div`
         flex: 1;
     `
-
     const Content = styled.div`
-        background: pink;
         flex: 3;
+        margin: auto;
     `
-
     const Results = styled.div`
         width: 30vh;
         height: 10vh;
         border: 1px solid grey;
         border-radius: 5px;
+        margin-top: 1vh;
+        padding-left: 2vh;
+        height: auto;
+        color: darkgrey;
+        font-size: 0.9em;
     `
 
     const Container = styled.div`
         display: flex;
-        background: yellow;
         flex-wrap: wrap;
         justify-content: space-between;
+        width: 50vh;
     `
 
     return (
         <Wrapper>
             <Box />
             <Content>
-                Filters
+                <span style={{ fontSize: "0.8em" }}>Filters</span>
                 <Results >
-                    All CQA Results
-                    CQAs with Closed Loop
+                    <p>■ All CQA Results ◉ </p>
+                    <p>□ CQAs with Closed Loop ◉ </p>
                 </Results>
                 <Container >
                     {guageData && guageData.map(each => <Cards 

@@ -16,7 +16,6 @@ export const Trend = ({ areaData }) => {
         text-align: left;
     `
     const Content = styled.div`
-        background: blue;
         display: flex;
         align-items: center;
     `
@@ -25,22 +24,22 @@ export const Trend = ({ areaData }) => {
     const Tab = styled.div`
         display: flex;
         justify-content: space-between;
-        flex: 1.5;
+        flex: 1;
     `
 
     const Right = styled.div`
-    flex: 1;
-`
+        flex: 1;
+    `
 
     const Area = styled.div`
-        background: grey;
         height: 40vh;
-        width: 50vh;
+        width: 60vh;
         margin: 50px;
+        margin-top: 20vh;
     `
 
     const Title = styled.div`
-        flex: 1;
+        flex: 1.2;
     `
 
     return (
@@ -48,12 +47,12 @@ export const Trend = ({ areaData }) => {
             <Content>
                 <Title >QUALITY TREND SCORE</Title>
                 <Tab >
-                    <FontAwesomeIcon icon={faCalendarDay} size="2x" />
-                    <FontAwesomeIcon icon={faCalendarWeek} size="2x" />
-                    <FontAwesomeIcon icon={faCalendarCheck} size="2x" />
-                    <FontAwesomeIcon icon={faDiceFour} size="2x" />
-                    <FontAwesomeIcon icon={faDiceSix} size="2x" />
-                    <FontAwesomeIcon icon={faGlassCheers} size="2x" />
+                    <FontAwesomeIcon icon={faCalendarDay} size="lg" color="darkblue"/>
+                    <FontAwesomeIcon icon={faCalendarWeek} size="lg" color="darkblue"/>
+                    <FontAwesomeIcon icon={faCalendarCheck} size="lg" color="darkblue"/>
+                    <FontAwesomeIcon icon={faDiceFour} size="lg" color="darkblue"/>
+                    <FontAwesomeIcon icon={faDiceSix} size="lg" color="darkblue"/>
+                    <FontAwesomeIcon icon={faGlassCheers} size="lg" color="darkblue"/>
                 </Tab>
                 <Right />
             </Content>
