@@ -27,7 +27,7 @@ export const Navbar = () => {
     float: right;
     text-align: right;
     padding-right: 10vh;
-    transform: translateY(40%);
+    transform: translateY(55%);
     display: flex;
     justify-content: space-between;
     width: 50vh;
