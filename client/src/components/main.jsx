@@ -6,14 +6,15 @@ import { Trend } from "./trend"
 export const Main = (data) => {
 
     const [areaData, setAreaData] = useState()
+    const [selectedArea, setSelectedArea] = useState("Quality Score")
 
     useEffect(()=> {
         fetchAreaData("Quality Score")
     }, [])
 
-    const fetchAreaData = (selectedArea) => {
-        console.log("I'm inside fetchAreaData:", selectedArea)
-        fetch(`http://localhost:5000/areaData/${selectedArea}`)
+    const fetchAreaData = (area) => {
+        setSelectedArea(area)
+        fetch(`http://localhost:5000/areaData/${area}`)
         .then(res => res.json())
         .then(res => setAreaData(res))
         .catch(err => new Error(err))
@@ -23,9 +24,11 @@ export const Main = (data) => {
         display: flex;
     `
 
+
+
     return (
         <Layout >
-            <Filters data={data} fetchAreaData={fetchAreaData}/>
+            <Filters data={data} fetchAreaData={fetchAreaData} selectedArea={selectedArea}/>
             <Trend areaData={areaData} />
         </Layout>
     )

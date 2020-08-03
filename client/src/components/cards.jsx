@@ -1,9 +1,9 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 
 import { Circle } from "./circle"
 
-export const Cards = ({ title, sample, score, fetchAreaData }) => {
+export const Cards = ({ title, sample, score, fetchAreaData, selectedArea }) => {
 
     const Card = styled.div`
         height: 22vh;
@@ -12,6 +12,7 @@ export const Cards = ({ title, sample, score, fetchAreaData }) => {
         border-radius: 3px;
         margin-top: 3vh;
         margin-bottom: 3vh;
+        background: ${selectedArea == title ? "green" : "white"};
     `
 
     return (

@@ -3,7 +3,7 @@ import React from "react"
 import styled from "styled-components"
 import { Cards } from "./cards"
 
-export const Filters = ({ data, fetchAreaData }) => {
+export const Filters = ({ data, fetchAreaData, selectedArea }) => {
 
     const guageData = data.data
 
@@ -53,7 +53,9 @@ export const Filters = ({ data, fetchAreaData }) => {
                         title={each.name} 
                         score={each.score} 
                         sample={each.sample} 
-                        fetchAreaData={()=>fetchAreaData(each.name)} />)}
+                        fetchAreaData={()=>fetchAreaData(each.name)} 
+                        selectedArea={selectedArea}
+                        />)}
                 </Container>
             </Content>
         </Wrapper >
