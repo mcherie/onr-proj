@@ -19,9 +19,6 @@ export const Main = (data) => {
         .catch(err => new Error(err))
     }
 
-    console.log("areaData is", areaData)
-
-
     const Layout = styled.div`
         display: flex;
     `

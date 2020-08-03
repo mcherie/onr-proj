@@ -1,8 +1,7 @@
 import React from "react"
-import { VictoryTheme, VictoryArea, VictoryGroup, VictoryChart } from "victory"
+import { VictoryTheme, VictoryArea, VictoryGroup, VictoryChart, VictoryClipContainer } from "victory"
 
 export const AreaChart = ({ areaData }) => {
-    
 
     return (
 
@@ -14,15 +13,19 @@ export const AreaChart = ({ areaData }) => {
             >
                 <VictoryArea
                     style={{
-                        data: { fill: "cyan", stroke: "cyan" }
+                        data: { fill: "cyan", stroke: "cyan", }
                     }}
-                    data={[
+                    data={ areaData? areaData.map(each => {
+                        return {
+                            x: each.date, 
+                            y: each.score
+                        }
+                    }) : [
                         { x: 1, y: 2 },
                         { x: 2, y: 3 },
-                        { x: 3, y: 5 },
-                        { x: 4, y: 4 },
-                        { x: 5, y: 7 }
                     ]}
+                    labels={({ datum }) => datum.y+"%"}
+                    interpolation="natural"
                 />
 
             </VictoryGroup>
