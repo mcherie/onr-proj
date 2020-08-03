@@ -12,8 +12,9 @@ export const Main = (data) => {
         fetchAreaData("Quality Score")
     }, [])
 
-    const fetchAreaData = (area) => {
-        fetch(`http://localhost:5000/areaData/${area}`)
+    const fetchAreaData = (selectedArea) => {
+        console.log("I'm inside fetchAreaData:", selectedArea)
+        fetch(`http://localhost:5000/areaData/${selectedArea}`)
         .then(res => res.json())
         .then(res => setAreaData(res))
         .catch(err => new Error(err))
@@ -25,8 +26,8 @@ export const Main = (data) => {
 
     return (
         <Layout >
-            <Filters data={data}/>
-            <Trend areaData={areaData} fetchAreaData={()=>fetchAreaData}/>
+            <Filters data={data} fetchAreaData={fetchAreaData}/>
+            <Trend areaData={areaData} />
         </Layout>
     )
 }

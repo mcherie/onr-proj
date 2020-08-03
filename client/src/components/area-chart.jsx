@@ -5,7 +5,7 @@ export const AreaChart = ({ areaData }) => {
 
     return (
 
-        <VictoryChart width={400} height={400}>
+        <VictoryChart width={500} height={300}>
             <VictoryGroup
                 style={{
                     data: { strokeWidth: 3, fillOpacity: 0.4 }
@@ -20,10 +20,7 @@ export const AreaChart = ({ areaData }) => {
                             x: each.date, 
                             y: each.score
                         }
-                    }) : [
-                        { x: 1, y: 2 },
-                        { x: 2, y: 3 },
-                    ]}
+                    }) : [{ x: 1, y: 1 }]}
                     labels={({ datum }) => datum.y+"%"}
                     interpolation="natural"
                 />

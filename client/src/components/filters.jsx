@@ -3,7 +3,7 @@ import React from "react"
 import styled from "styled-components"
 import { Cards } from "./cards"
 
-export const Filters = ({ data }) => {
+export const Filters = ({ data, fetchAreaData }) => {
 
     const guageData = data.data
 
@@ -48,8 +48,12 @@ export const Filters = ({ data }) => {
                     All CQA Results
                     CQAs with Closed Loop
                 </Results>
-                <Container>
-                    {guageData && guageData.map(each => <Cards title={each.name} score={each.score} sample={each.sample} />)}
+                <Container >
+                    {guageData && guageData.map(each => <Cards 
+                        title={each.name} 
+                        score={each.score} 
+                        sample={each.sample} 
+                        fetchAreaData={fetchAreaData} />)}
                 </Container>
             </Content>
         </Wrapper >
