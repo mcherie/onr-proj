@@ -12,7 +12,7 @@ export const Circle = ({ score }) => {
             { x: 2, y: 100-score}
           ]}
           innerRadius={124} labelRadius={125}
-          style={{ labels: { fontSize: 25, fill: "white" } }}
+          // style={{ labels: { fontSize: 25, fill: "white" } }}
           // theme={VictoryTheme.material}
           colorScale={["#005b96", "#D6D9DC", ]}
         />

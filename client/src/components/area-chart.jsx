@@ -24,7 +24,6 @@ export const AreaChart = ({ areaData }) => {
                     labels={({ datum }) => datum.y+"%"}
                     interpolation="natural"
                 />
-
             </VictoryGroup>
         </VictoryChart>
 

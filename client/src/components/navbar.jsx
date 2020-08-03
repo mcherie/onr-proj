@@ -30,7 +30,7 @@ export const Navbar = () => {
     transform: translateY(55%);
     display: flex;
     justify-content: space-between;
-    width: 50vh;
+    width: 45vh;
   `
 
   return (
