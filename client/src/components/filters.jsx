@@ -6,8 +6,6 @@ import { Cards } from "./cards"
 export const Filters = ({ data }) => {
 
     const guageData = data.data
-    console.log("guage data is", guageData)
-
 
     // for the whole side to be equal flex 1 from quality
     const Wrapper = styled.div`

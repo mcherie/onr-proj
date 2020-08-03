@@ -17,8 +17,6 @@ function App() {
       .then(res => setData(res))
   }, [])
 
-  console.log("1. passing on:", data)
-
   return (
     <div className="App">
       <header className="App-header">
