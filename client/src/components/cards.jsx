@@ -1,9 +1,9 @@
-import React, {useCallback} from "react"
+import React from "react"
 import styled from "styled-components"
 
-import {Circle} from "./circle"
+import { Circle } from "./circle"
 
-export const Cards = ({title, sample, score, fetchAreaData}) => {
+export const Cards = ({ title, sample, score, fetchAreaData }) => {
 
     const Card = styled.div`
         height: 22vh;
@@ -14,10 +14,8 @@ export const Cards = ({title, sample, score, fetchAreaData}) => {
         margin-bottom: 3vh;
     `
 
-    const updateAreaChart = useCallback(() => fetchAreaData(title), [fetchAreaData, title])
-
     return (
-        <Card onClick={updateAreaChart}>
+        <Card onClick={fetchAreaData}>
             {title}
             Score: {score}
             Sample: {sample}

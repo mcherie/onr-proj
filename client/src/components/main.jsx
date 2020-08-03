@@ -6,7 +6,6 @@ import { Trend } from "./trend"
 export const Main = (data) => {
 
     const [areaData, setAreaData] = useState()
-    const [selectedArea, setSelectedArea] = useState()
 
     useEffect(()=> {
         fetchAreaData("Quality Score")

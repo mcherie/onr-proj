@@ -53,7 +53,7 @@ export const Filters = ({ data, fetchAreaData }) => {
                         title={each.name} 
                         score={each.score} 
                         sample={each.sample} 
-                        fetchAreaData={fetchAreaData} />)}
+                        fetchAreaData={()=>fetchAreaData(each.name)} />)}
                 </Container>
             </Content>
         </Wrapper >
