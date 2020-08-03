@@ -1,6 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 
+import {Circle} from "./circle"
+
 export const Cards = ({title, sample, score}) => {
 
     const Card = styled.div`
@@ -17,6 +19,7 @@ export const Cards = ({title, sample, score}) => {
             {title}
             Score: {score}
             Sample: {sample}
+            <Circle score={score} />
         </Card>
     )
 }
