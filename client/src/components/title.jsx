@@ -1,14 +1,12 @@
 import React from "react"
-
 import styled from "styled-components"
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 
 export const Title = () => {
 
     const Head = styled.div`
-        background: #D6D5D4;
+        background: #EBECEC;
         height: 7vh;
         margin-top: 2vh;
         margin-bottom: 3vh;

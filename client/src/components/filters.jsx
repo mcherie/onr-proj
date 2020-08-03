@@ -1,5 +1,4 @@
 import React from "react"
-
 import styled from "styled-components"
 import { Cards } from "./cards"
 
@@ -7,7 +6,6 @@ export const Filters = ({ data, fetchAreaData, selectedArea }) => {
 
     const guageData = data.data
 
-    // for the whole side to be equal flex 1 from quality
     const Wrapper = styled.div`
         flex: 1;
         justify-content: start;

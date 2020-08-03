@@ -1,16 +1,9 @@
 import React from "react"
-
 import styled from "styled-components"
 import {AreaChart} from "./area-chart"
 
-
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCalendarDay, faCalendarWeek, faCalendarCheck, faDiceFour, faDiceSix, faGlassCheers, } from '@fortawesome/free-solid-svg-icons'
-
 export const Trend = ({ areaData }) => {
 
-    // this should be for the whole trend itself, so flex equal with "filters"
     const Wrapper = styled.div`
         flex: 1.2;
         text-align: left;
@@ -20,15 +13,20 @@ export const Trend = ({ areaData }) => {
         align-items: center;
     `
 
+    const Title = styled.div`
+        flex: 1;
+        color: #65696D;
+    `
 
     const Tab = styled.div`
         display: flex;
         justify-content: space-between;
-        flex: 0.9;
+        flex: 1.5;
+        margin-left: 2vh;
     `
 
     const Right = styled.div`
-        flex: 1;
+        flex: 0.8;
     `
 
     const Area = styled.div`
@@ -38,9 +36,18 @@ export const Trend = ({ areaData }) => {
         margin-top: 20vh;
     `
 
-    const Title = styled.div`
-        flex: 1;
-        color: #65696D;
+    const Box = styled.div`
+        height: 3vh;
+        width: auto;
+        background: #196ba0;
+        border-radius: 3px;
+        font-size: 0.7em;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 1vh;
+        padding-right: 1vh;
     `
 
     return (
@@ -48,12 +55,12 @@ export const Trend = ({ areaData }) => {
             <Content>
                 <Title >QUALITY TREND SCORE</Title>
                 <Tab >
-                    <FontAwesomeIcon icon={faCalendarDay} size="lg" color="#03396c"/>
-                    <FontAwesomeIcon icon={faCalendarWeek} size="lg" color="#03396c"/>
-                    <FontAwesomeIcon icon={faCalendarCheck} size="lg" color="#03396c"/>
-                    <FontAwesomeIcon icon={faDiceFour} size="lg" color="#03396c"/>
-                    <FontAwesomeIcon icon={faDiceSix} size="lg" color="#03396c"/>
-                    <FontAwesomeIcon icon={faGlassCheers} size="lg" color="#03396c"/>
+                    <Box> Day </Box>
+                    <Box> Week </Box>
+                    <Box> Month </Box>
+                    <Box> Quarter </Box>
+                    <Box> Half </Box>
+                    <Box> Year </Box>
                 </Tab>
                 <Right />
             </Content>

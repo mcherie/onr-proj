@@ -1,11 +1,11 @@
 import React from "react"
-import { VictoryTheme, VictoryArea, VictoryGroup, VictoryChart, VictoryClipContainer } from "victory"
+import { VictoryArea, VictoryGroup, VictoryChart } from "victory"
 
 export const AreaChart = ({ areaData }) => {
 
     return (
 
-        <VictoryChart width={600} height={300}>
+        <VictoryChart width={600} height={300} >
             <VictoryGroup
                 style={{
                     data: { strokeWidth: 3, fillOpacity: 0.4 }
