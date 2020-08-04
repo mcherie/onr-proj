@@ -25,7 +25,7 @@ export const Filters = ({ data, fetchAreaData, selectedArea }) => {
     const Results = styled.div`
         width: 30vh;
         height: 10vh;
-        border: 1px solid grey;
+        border: 1px solid rgba(112, 112, 112, 0.3);
         border-radius: 5px;
         margin-top: 1vh;
         padding-left: 2vh;
