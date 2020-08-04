@@ -35,8 +35,9 @@ export const Title = () => {
                 position: "absolute",
                 top: "50%",
                 transform: "translateY(-50%)",
-                marginLeft: "120vh",
                 color: "#0170C5",
+                float: "right",
+                width: "150%"
             }}/>
         </Head>
     )

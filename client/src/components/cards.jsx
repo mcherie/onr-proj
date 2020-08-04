@@ -14,7 +14,6 @@ export const Cards = ({ title, sample, score, fetchAreaData, selectedArea }) => 
         background: ${selectedArea == title ? "#F1F6FB" : null};
         height: auto;
         color: #005b96;
-        font-size: 0.8em;
         text-align: center;
         padding-bottom: 1vh;
         padding-top: 1vh;

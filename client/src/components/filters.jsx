@@ -11,7 +11,6 @@ export const Filters = ({ data, fetchAreaData, selectedArea }) => {
 
     const Wrapper = styled.div`
         flex: 1;
-        justify-content: start;
         text-align: left;
         display: flex;
     `
@@ -20,7 +19,7 @@ export const Filters = ({ data, fetchAreaData, selectedArea }) => {
     `
     const Content = styled.div`
         flex: 3;
-        margin: auto;
+        margin-top: 3vh;        
     `
     const Results = styled.div`
         width: 30vh;
@@ -31,7 +30,6 @@ export const Filters = ({ data, fetchAreaData, selectedArea }) => {
         padding-left: 2vh;
         height: auto;
         color: #65696D;
-        font-size: 0.8em;
     `
 
     const Container = styled.div`
@@ -58,7 +56,7 @@ export const Filters = ({ data, fetchAreaData, selectedArea }) => {
         <Wrapper>
             <Box />
             <Content>
-                <span style={{ fontSize: "0.8em", color: "#4C4F52"}}>Filters</span>
+                <span style={{ color: "#4C4F52"}}>Filters</span>
                 <Results >
                     <p><Selected /> All CQA Results <FontAwesomeIcon icon={faInfoCircle} size="xxs" color="#5F5F60" /></p>
                     <p><Unselected /> CQAs with Closed Loop <FontAwesomeIcon icon={faInfoCircle} size="xxs" color="#5F5F60" /> </p>

@@ -10,14 +10,9 @@ export const Navbar = () => {
     background: #005b96;
     color: white;
     height: 6vh;
-    margin-bottom: 2vh;
+    margin-bottom: 3vh;
     padding-left: 10vh;
     position: relative;
-
-    // @media screen and (min-width: 415px){
-    //     flex-direction: colum;
-    // }
-
   `
 
   const Title = styled.div`
@@ -32,17 +27,17 @@ export const Navbar = () => {
     float: right;
     text-align: right;
     padding-right: 10vh;
-    transform: translateY(55%);
+    transform: translateY(70%);
     display: flex;
     justify-content: space-between;
-    width: 45vh;
+    width: 50vh;
   `
 
   return (
     <Wrapper>
       <Title>Diagnostic Tool</Title>
       <Box>
-        <span style={{ fontSize: "0.9em" }}>Logged in as General User </span>|
+        <span >Logged in as General User </span>|
         <FontAwesomeIcon icon={faThumbtack} size="xxs" color="white" />
         <FontAwesomeIcon icon={faSignal} size="1x" color="white" />
         <FontAwesomeIcon icon={faEnvelopeOpenText} size="1x" color="white" />

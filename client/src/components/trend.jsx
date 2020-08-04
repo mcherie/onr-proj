@@ -16,6 +16,7 @@ export const Trend = ({ areaData }) => {
     const Title = styled.div`
         flex: 1;
         color: #65696D;
+        font-size: 1.1em;
     `
 
     const Tab = styled.div`
@@ -26,14 +27,14 @@ export const Trend = ({ areaData }) => {
     `
 
     const Right = styled.div`
-        flex: 0.8;
+        flex: 0.7;
     `
 
     const Area = styled.div`
         height: 50vh;
         width: 75vh;
         margin: 50px;
-        margin-top: 20vh;
+        margin-top: 15vh;
     `
 
     const Box = styled.div`
@@ -41,7 +42,7 @@ export const Trend = ({ areaData }) => {
         width: auto;
         background: #196ba0;
         border-radius: 3px;
-        font-size: 0.7em;
+        font-size: 0.8em;
         color: white;
         display: flex;
         align-items: center;
