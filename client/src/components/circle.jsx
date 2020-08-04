@@ -13,12 +13,16 @@ export const Circle = ({ score }) => {
           ]}
           innerRadius={124} labelRadius={125}
           colorScale={["#005b96", "#D6D9DC", ]}
+          labels={() => [``]}
         />
         <VictoryLabel
           textAnchor="middle"
-          style={{ fontSize: 62 }}
+          style={[
+            { fontSize: 60, fill: "#0071C5"}, 
+            { fontSize: 34, fill: "grey"}
+          ]}
           x={200} y={200}
-          text={`${score}%`}
+          text={() => [`${score}%`, "N/A",]}
         />
       </svg>
     )
