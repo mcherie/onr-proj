@@ -11,7 +11,7 @@ export const Title = () => {
         margin-top: 2vh;
         margin-bottom: 3vh;
         padding-left: 20vh;
-        padding-right: 12vh;
+        padding-right: 15vh;
         color: #4C4F52;
         display: flex;
         justify-content: flex-start;
