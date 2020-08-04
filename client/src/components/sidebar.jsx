@@ -7,7 +7,7 @@ import { faThumbtack, faSignal, faEnvelopeOpenText, faProjectDiagram, faFileImpo
 export const Sidebar = () => {
 
     const Box = styled.div`
-        height: 100vh;
+        height: 100%;
         background: #03396c;
         width: 6vh;
         overflow-wrap: break-word;

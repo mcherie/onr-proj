@@ -13,6 +13,11 @@ export const Navbar = () => {
     margin-bottom: 2vh;
     padding-left: 10vh;
     position: relative;
+
+    // @media screen and (min-width: 415px){
+    //     flex-direction: colum;
+    // }
+
   `
 
   const Title = styled.div`
