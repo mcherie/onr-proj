@@ -11,6 +11,7 @@ export const Trend = ({ areaData, selectedArea }) => {
     const Content = styled.div`
         display: flex;
         align-items: center;
+        margin-top: 3vh;
     `
 
     const Title = styled.div`
@@ -29,7 +30,7 @@ export const Trend = ({ areaData, selectedArea }) => {
     `
 
     const Right = styled.div`
-        flex: 0.6;
+        flex: 0.5;
     `
 
     const Area = styled.div`

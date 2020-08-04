@@ -37,7 +37,7 @@ export const Title = () => {
                 transform: "translateY(-50%)",
                 color: "#0170C5",
                 float: "right",
-                width: "150%"
+                width: "160%"
             }}/>
         </Head>
     )

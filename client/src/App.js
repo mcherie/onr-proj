@@ -23,7 +23,7 @@ function App() {
       </header>
       <div className="body">
         <Navbar />
-        <text style={{ marginLeft: "21vh", color: "#65696D", fontSize: "1.4em" }}>PERFORMANCE MANAGEMENT</text>
+        <text style={{ marginLeft: "20vh", color: "#65696D", fontSize: "1.4em" }}>PERFORMANCE MANAGEMENT</text>
         <Title />
         <Main data={data}/>
       </div>
