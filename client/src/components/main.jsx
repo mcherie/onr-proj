@@ -30,7 +30,7 @@ export const Main = (data) => {
     return (
         <Layout >
             <Filters data={data} fetchAreaData={fetchAreaData} selectedArea={selectedArea}/>
-            <Trend areaData={areaData} />
+            <Trend areaData={areaData} selectedArea={selectedArea}/>
         </Layout>
     )
 }

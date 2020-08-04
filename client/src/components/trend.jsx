@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import {AreaChart} from "./area-chart"
 
-export const Trend = ({ areaData }) => {
+export const Trend = ({ areaData, selectedArea }) => {
 
     const Wrapper = styled.div`
         flex: 1.2;
@@ -17,6 +17,7 @@ export const Trend = ({ areaData }) => {
         flex: 1;
         color: #65696D;
         font-size: 1.1em;
+        text-transform: uppercase;
     `
 
     const Tab = styled.div`
@@ -60,7 +61,7 @@ export const Trend = ({ areaData }) => {
     return (
         <Wrapper >
             <Content>
-                <Title >QUALITY TREND SCORE</Title>
+                <Title >{selectedArea} TREND</Title>
                 <Tab >
                     <Box style={{opacity: ".5"}}> Day </Box>
                     <Box> Week </Box>
