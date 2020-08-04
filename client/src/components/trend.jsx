@@ -40,7 +40,7 @@ export const Trend = ({ areaData }) => {
     const Box = styled.div`
         height: 4vh;
         width: auto;
-        background: #196ba0;
+        background: #0071C5;
         border-radius: 3px;
         font-size: 0.8em;
         color: white;
@@ -49,6 +49,12 @@ export const Trend = ({ areaData }) => {
         justify-content: center;
         padding-left: 1vh;
         padding-right: 1vh;
+        cursor: pointer;
+        transition: 0.3s ease-out;
+
+        &:hover {
+            background: #04426F;
+        }
     `
 
     return (
@@ -56,7 +62,7 @@ export const Trend = ({ areaData }) => {
             <Content>
                 <Title >QUALITY TREND SCORE</Title>
                 <Tab >
-                    <Box> Day </Box>
+                    <Box style={{opacity: ".5"}}> Day </Box>
                     <Box> Week </Box>
                     <Box> Month </Box>
                     <Box> Quarter </Box>

@@ -18,6 +18,7 @@ export const Cards = ({ title, sample, score, fetchAreaData, selectedArea }) => 
         padding-bottom: 1vh;
         padding-top: 1vh;
         box-shadow: 0 2px 1px -1px rgba(112, 112, 112, 0.3);
+        cursor: pointer;
     `
 
     return (
