@@ -21,10 +21,7 @@ export const Title = () => {
     return (
         <Head >
             <FontAwesomeIcon icon={faGlobe} size="2x" style={{ padding: "1vh" }} />
-            <text style={{
-                marginLeft: "8vh",
-                fontSize: "1.2em",
-            }}>Diagnostic Tool</text>
+            <text style={{fontSize: "1.2em"}}>Diagnostic Tool</text>
             <FontAwesomeIcon icon={faThumbtack} size="lg" style={{
                 padding: "1vh", 
                 color: "#0170C5",
