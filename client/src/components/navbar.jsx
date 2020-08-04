@@ -27,22 +27,21 @@ export const Navbar = () => {
     float: right;
     text-align: right;
     padding-right: 10vh;
-    transform: translateY(70%);
+    transform: translateY(50%);
     display: flex;
     justify-content: space-between;
-    width: 50vh;
   `
 
   return (
     <Wrapper>
       <Title>Diagnostic Tool</Title>
       <Box>
-        <span >Logged in as General User </span>|
-        <FontAwesomeIcon icon={faThumbtack} size="xxs" color="white" />
-        <FontAwesomeIcon icon={faSignal} size="1x" color="white" />
-        <FontAwesomeIcon icon={faEnvelopeOpenText} size="1x" color="white" />
-        <FontAwesomeIcon icon={faProjectDiagram} size="xs" color="white" />
-        <FontAwesomeIcon icon={faFileImport} size="1x" color="white" />
+        <span >Logged in as General User </span>&nbsp; |
+        <FontAwesomeIcon icon={faThumbtack} size="xxs" color="white" style={{paddingLeft: "2vh"}}/>
+        <FontAwesomeIcon icon={faSignal} size="1x" color="white" style={{paddingLeft: "2vh"}}/>
+        <FontAwesomeIcon icon={faEnvelopeOpenText} size="1x" color="white" style={{paddingLeft: "2vh"}}/>
+        <FontAwesomeIcon icon={faProjectDiagram} size="xs" color="white" style={{paddingLeft: "2vh"}} />
+        <FontAwesomeIcon icon={faFileImport} size="1x" color="white" style={{paddingLeft: "2vh"}}/>
       </Box>
     </Wrapper>
   )

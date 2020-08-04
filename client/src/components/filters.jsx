@@ -10,19 +10,19 @@ export const Filters = ({ data, fetchAreaData, selectedArea }) => {
     const guageData = data.data
 
     const Wrapper = styled.div`
-        flex: 1.5;
+        flex: 1.1;
         text-align: left;
         display: flex;
     `
     const Box = styled.div`
-        flex: 1;
+        flex: 0.8;
     `
     const Content = styled.div`
         flex: 3;
         margin-top: 3vh;        
     `
     const Results = styled.div`
-        width: 30vh;
+        width: 40vh;
         height: 10vh;
         border: 1px solid rgba(112, 112, 112, 0.3);
         border-radius: 5px;
@@ -36,7 +36,6 @@ export const Filters = ({ data, fetchAreaData, selectedArea }) => {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        width: 50vh;
     `
 
     const Selected = styled.div`

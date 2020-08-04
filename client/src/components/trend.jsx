@@ -29,7 +29,7 @@ export const Trend = ({ areaData, selectedArea }) => {
     `
 
     const Right = styled.div`
-        flex: 0.7;
+        flex: 0.6;
     `
 
     const Area = styled.div`
@@ -53,6 +53,7 @@ export const Trend = ({ areaData, selectedArea }) => {
         padding-right: 1vh;
         cursor: pointer;
         transition: 0.3s ease-out;
+        margin-left: 1vh;
 
         &:hover {
             background: #04426F;

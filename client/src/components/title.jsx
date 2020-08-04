@@ -24,7 +24,7 @@ export const Title = () => {
                 transform: "translateY(-50%)"
             }} />
             <text style={{
-                marginLeft: "7vh",
+                marginLeft: "8vh",
                 position: "absolute",
                 top: "50%",
                 transform: "translateY(-50%)",
