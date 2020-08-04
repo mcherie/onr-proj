@@ -19,7 +19,7 @@ export const Sidebar = () => {
         flex-direction: column;
         height: 25vh;
         justify-content: space-between;
-        margin-top: 8vh;
+        margin-top: 6vh;
         align-items: center;
         padding-right: 0.6vh;
     `

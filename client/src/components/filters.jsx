@@ -10,7 +10,7 @@ export const Filters = ({ data, fetchAreaData, selectedArea }) => {
     const guageData = data.data
 
     const Wrapper = styled.div`
-        flex: 1.2;
+        flex: 1.5;
         text-align: left;
         display: flex;
     `
