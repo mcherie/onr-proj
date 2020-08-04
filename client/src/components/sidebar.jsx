@@ -24,14 +24,26 @@ export const Sidebar = () => {
         padding-right: 0.6vh;
     `
 
+    const Separator =  styled.div`
+        background: #2A2A2A; 
+        width: 105%;
+        height: 1px;
+    `
+
     return (
         <Box>
             <Tab>
-                    <FontAwesomeIcon icon={faThumbtack} size="1x" color="white"/>
+                    <Separator />
+                    <FontAwesomeIcon icon={faThumbtack} size="1x" color="white" />
+                    <Separator />
                     <FontAwesomeIcon icon={faSignal} size="xs" color="white" />
+                    <Separator />
                     <FontAwesomeIcon icon={faEnvelopeOpenText} size="1x" color="white" />
+                    <Separator />
                     <FontAwesomeIcon icon={faProjectDiagram} size="xs" color="white" />
+                    <Separator />
                     <FontAwesomeIcon icon={faFileImport} size="1x" color="white" />
+                    <Separator />
             </Tab>
         </Box>
     )

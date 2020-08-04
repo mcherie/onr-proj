@@ -30,8 +30,8 @@ export const Trend = ({ areaData }) => {
     `
 
     const Area = styled.div`
-        height: 40vh;
-        width: 60vh;
+        height: 50vh;
+        width: 75vh;
         margin: 50px;
         margin-top: 20vh;
     `

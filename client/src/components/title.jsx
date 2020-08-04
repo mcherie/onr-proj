@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGlobe } from '@fortawesome/free-solid-svg-icons'
+import { faGlobe, faThumbtack } from '@fortawesome/free-solid-svg-icons'
 
 export const Title = () => {
 
@@ -10,16 +10,34 @@ export const Title = () => {
         height: 7vh;
         margin-top: 2vh;
         margin-bottom: 3vh;
-        display: flex;
-        align-items: center; 
         padding-left: 21vh;
         color: #4C4F52;
+        position: relative;
     `
 
     return (
         <Head >
-            <FontAwesomeIcon icon={faGlobe} size="lg"/>
-            <text style={{marginLeft: "1vh"}}>Diagnostic Tool</text>
+            <FontAwesomeIcon icon={faGlobe} size="2x" style={{
+                padding: "1vh", 
+                position: "absolute",
+                top: "50%",
+                transform: "translateY(-50%)"
+            }} />
+            <text style={{
+                marginLeft: "7vh",
+                position: "absolute",
+                top: "50%",
+                transform: "translateY(-50%)",
+                fontSize: "1.2em"
+            }}>Diagnostic Tool</text>
+            <FontAwesomeIcon icon={faThumbtack} size="lg" style={{
+                padding: "1vh", 
+                position: "absolute",
+                top: "50%",
+                transform: "translateY(-50%)",
+                marginLeft: "120vh",
+                color: "#0170C5",
+            }}/>
         </Head>
     )
 

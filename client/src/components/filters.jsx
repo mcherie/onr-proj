@@ -1,6 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 import { Cards } from "./cards"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
+
 
 export const Filters = ({ data, fetchAreaData, selectedArea }) => {
 
@@ -38,14 +41,27 @@ export const Filters = ({ data, fetchAreaData, selectedArea }) => {
         width: 50vh;
     `
 
+    const Selected = styled.div`
+        height: 12px;
+        width: 12px;
+        background: #0170C5;
+        display: inline-block;
+    `
+    const Unselected = styled.div`
+        height: 12px;
+        width: 12px;
+        background: #eee;
+        display: inline-block;
+    `
+
     return (
         <Wrapper>
             <Box />
             <Content>
                 <span style={{ fontSize: "0.8em", color: "#4C4F52"}}>Filters</span>
                 <Results >
-                    <p>■ All CQA Results ◉ </p>
-                    <p>□ CQAs with Closed Loop ◉ </p>
+                    <p><Selected /> All CQA Results <FontAwesomeIcon icon={faInfoCircle} size="xxs" color="#5F5F60" /></p>
+                    <p><Unselected /> CQAs with Closed Loop <FontAwesomeIcon icon={faInfoCircle} size="xxs" color="#5F5F60" /> </p>
                 </Results>
                 <Container >
                     {guageData && guageData.map(each => <Cards 
