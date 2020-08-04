@@ -18,6 +18,7 @@ export const Trend = ({ areaData, selectedArea }) => {
         color: #65696D;
         font-size: 1.1em;
         text-transform: uppercase;
+        text-align: center;
     `
 
     const Tab = styled.div`
