@@ -24,7 +24,7 @@ export const Cards = ({ title, sample, score, fetchAreaData, selectedArea }) => 
     return (
         <Card onClick={fetchAreaData}>
             {title}
-            <Circle score={score} />
+            <Circle score={score} selectedArea={selectedArea} title={title}/>
             <span style={{ color: "#65696D" }}>Sample: {sample} </span>
 
         </Card>

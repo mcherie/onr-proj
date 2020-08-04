@@ -1,7 +1,7 @@
 import React from "react"
 import { VictoryLabel, VictoryPie} from "victory"
 
-export const Circle = ({ score }) => {
+export const Circle = ({ score, title, selectedArea }) => {
     return (
         <svg viewBox="0 0 400 400">
         <VictoryPie
@@ -12,7 +12,7 @@ export const Circle = ({ score }) => {
             { x: 2, y: 100-score}
           ]}
           innerRadius={124} labelRadius={125}
-          colorScale={["#005b96", "#E7E7E7", ]}
+          colorScale={title == selectedArea ? ["#00AEEF", "#E7E7E7", ] : ["#005b96", "#E7E7E7", ] }
           labels={() => [``]}
         />
         <VictoryLabel

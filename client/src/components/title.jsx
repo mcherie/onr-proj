@@ -10,34 +10,25 @@ export const Title = () => {
         height: 7vh;
         margin-top: 2vh;
         margin-bottom: 3vh;
-        padding-left: 21vh;
+        padding-left: 20vh;
+        padding-right: 12vh;
         color: #4C4F52;
-        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
     `
 
     return (
         <Head >
-            <FontAwesomeIcon icon={faGlobe} size="2x" style={{
-                padding: "1vh", 
-                position: "absolute",
-                top: "50%",
-                transform: "translateY(-50%)"
-            }} />
+            <FontAwesomeIcon icon={faGlobe} size="2x" style={{ padding: "1vh" }} />
             <text style={{
                 marginLeft: "8vh",
-                position: "absolute",
-                top: "50%",
-                transform: "translateY(-50%)",
-                fontSize: "1.2em"
+                fontSize: "1.2em",
             }}>Diagnostic Tool</text>
             <FontAwesomeIcon icon={faThumbtack} size="lg" style={{
                 padding: "1vh", 
-                position: "absolute",
-                top: "50%",
-                transform: "translateY(-50%)",
                 color: "#0170C5",
-                float: "right",
-                width: "160%"
+                marginLeft: "auto",
             }}/>
         </Head>
     )
